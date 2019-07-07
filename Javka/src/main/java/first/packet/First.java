@@ -9,8 +9,10 @@ public class First {
 		hello("world");
 		hello("noob");
 
+		Square s = new Square();
+		s.l = 5;
 		double l = 5;
-		System.out.println("Площадь квадрата со стороной " + l + " = " + area(l));
+		System.out.println("Площадь квадрата со стороной " + s.l + " = " + area(s));
 
 		double a = 4;
 		double b = 6;
@@ -23,8 +25,8 @@ public class First {
 		System.out.println("Hello, " + somebody + "!");
 	}
 
-	public static double area(double len) {
-		return len * len;
+	public static double area(Square s) {
+		return s.l * s.l;
 	}
 
 	public static double area(double a, double b){
